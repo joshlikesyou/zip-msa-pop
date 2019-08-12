@@ -1,7 +1,7 @@
 require 'csv'
 
 module Sync
-  class CSVReader
+  class CsvReader
     def self.read_csv(file_path)
       new.read_csv(file_path)
     end

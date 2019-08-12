@@ -11,7 +11,7 @@ module Sync
     end
 
     def perform
-      import_data = CSVReader.read_csv(file_path)
+      import_data = CsvReader.read_csv(file_path)
       map_rows(import_data)
       true
     end
