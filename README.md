@@ -1,5 +1,4 @@
-***
-# ZIP-MSA-POP CLIENT :zap: :boom:
+# ZIP-MSA-POP CLIENT
 
 #### Summary
 The ZIP-MSA-POP Client is a gem that allows you to query the very simple yet effective api for retrieving msa populations by zipcode.
@@ -7,7 +6,7 @@ The ZIP-MSA-POP Client is a gem that allows you to query the very simple yet eff
 #### Tech Used
 - Gems: httparty for the client and rspec, pry, webmock for development and testing.
 
-## Structure :european_castle:
+## Structure
 
 The core logic for this gem can be found here
 
@@ -16,7 +15,7 @@ The core logic for this gem can be found here
 
 This gem provides a ```ZipMsaPop::Client``` class to query the zip-pop api. The client wraps an instance of HTTParty and makes requests with that. The requests from the api are parsed, stringed keys are mapped to symbols and the response is returned to the user.
 
-## Getting started: :bike:
+## Getting started:
 
 - Clone the gem
 - navigate to the gem directory
@@ -56,9 +55,8 @@ Or install it yourself as:
     $ gem install zip_msa_pop
     
 
-***
 
-# ZIP-MSA-POP API :zap: :boom:
+# ZIP-MSA-POP API
 
 
 #### Summary
@@ -69,7 +67,7 @@ The ZIP-MSA-POP API makes use of the US Government’s HUD & Census data to deri
 - Gems: rspec, pry, dotenv for development and testing.
 - Hosting: I used heroku because it's pretty fast and easy to get a rails app deployed.
 
-## Api :satellite:
+## Api
 
 Host
 
@@ -100,7 +98,7 @@ Failed response
 
 The api here is super simple. The main route here is ```zip/``` and it takes a ```:zip``` parameter. The zip is passed to the ```Query::ZipMsaQuery``` class and returns a response with the related zipcode and population data or it returns an error.
 
-##  Structure :building_construction:
+##  Structure
 
 The core logic of this app exists in these folders
 
@@ -115,7 +113,7 @@ The ```Query::ZipMsaQuery``` class takes an argument for the zip code, validates
 
 The sync module contains classes used to parse incoming data from the csv and to save that to the database. This can be called by a rake task ```rake zip_pop::sync_zip_models``` or by running the migrations which will also populate the database using the same sync. There is a class that cordinates the sync process called ```Sync::SyncModel``` which takes a config object that handles the specifics of syncing a particular model. The ```SyncModel``` gets wrapped in another class such as ```SyncZipCbsa``` and ```SyncMsa``` that handle passing the correct config object to ```SyncModel```.
 
-##Getting the app started: :bike:
+##Getting the app started
 
     bundle install
 
