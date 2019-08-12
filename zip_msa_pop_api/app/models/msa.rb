@@ -1,0 +1,2 @@
+class Msa < ApplicationRecord
+end

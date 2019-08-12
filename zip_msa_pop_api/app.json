@@ -1,0 +1,23 @@
+{
+  "name": "zip-msa-pop-api",
+  "description": "api for serving up fresh zip msa pops",
+  "scripts": {
+  },
+  "env": {
+    "DATABASE_URL": {
+      "required": true
+    },
+    "ZIP_CSV_PATH": {
+      "required": true
+    },
+    "MSA_CSV_PATH": {
+      "required": true
+    }
+  },
+  "addons": ["heroku-postgresql"],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}

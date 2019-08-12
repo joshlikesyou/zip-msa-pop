@@ -1,0 +1,2 @@
+class ZipCbsa < ApplicationRecord
+end
