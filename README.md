@@ -113,7 +113,7 @@ The ```Query::ZipMsaQuery``` class takes an argument for the zip code, validates
 
 The sync module contains classes used to parse incoming data from the csv and to save that to the database. This can be called by a rake task ```rake zip_pop::sync_zip_models``` or by running the migrations which will also populate the database using the same sync. There is a class that cordinates the sync process called ```Sync::SyncModel``` which takes a config object that handles the specifics of syncing a particular model. The ```SyncModel``` gets wrapped in another class such as ```SyncZipCbsa``` and ```SyncMsa``` that handle passing the correct config object to ```SyncModel```.
 
-##Getting the app started
+## Getting the app started
 
     bundle install
 
