@@ -45,8 +45,8 @@ The core logic of this app exists in these folders
 
     app/
       services/
-        Sync/
-        Query/
+        sync/
+        query/
 
 I chose to break out the service objects into two modules, one for querying the zip to msa population data and one for updating the database with the csvs.
 
