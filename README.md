@@ -1,6 +1,6 @@
 ***
 # ZIP-MSA-POP CLIENT :zap: :boom:
-***
+
 #### Summary
 The ZIP-MSA-POP Client is a gem that allows you to query the very simple yet effective api for retrieving msa populations by zipcode.
 
@@ -59,7 +59,7 @@ Or install it yourself as:
 ***
 
 # ZIP-MSA-POP API :zap: :boom:
-***
+
 
 #### Summary
 The ZIP-MSA-POP API makes use of the US Government’s HUD & Census data to derive estimated populations queried by zipcode.
